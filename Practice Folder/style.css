@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: 	#cfcfcf;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.container{
+    padding: 5% 5%;
+height: auto;
+}
+
+.card-1{
+    background-color: #CC9900;
+}
+.card-2{
+    background-color: #CCCC99;
+}
+.card-3{
+    background-color: #CCCC00;
+}
+.card-4{
+    background-color: #999900;
+}
+.card-5{
+    background-color: #FFFFCC;
+}
+
+.content{
+padding: 1rem;
+margin: 2rem;
+text-align: justify;
+/* border-radius: 12px;
+box-shadow: 5px 11px 25px rgb(41, 54, 79); */
+}
+.flex-item{
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+  
+    border-radius: 12px;
+    box-shadow: 5px 10px 20px rgb(41, 54, 79);
+}
+.content h4{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.content p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+
+@media only screen and (min-width: 640px){
+    #left{
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        margin-bottom: 0px;
+    }
+    #top{
+        display: flex;
+        justify-content: space-between;
+   flex-basis: 50%;
+    }
+    #bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 50%;
+    }
+    .card-1{
+        flex-basis: 63% ;
+     }
+     .card-2{
+     flex-basis: 35%;
+     }
+     .card-3{
+     flex-basis: 35%;
+     
+     }
+     .card-4{
+         flex-basis: 63%;
+     }
+    .card-5{
+        /* border: 1px solid red; */
+        /* height: 50rem; */
+        /* flex-basis: 30%; */
+        margin-left: 0.8rem;
+        margin-top: 0.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .container{
+        border: 2px solid green;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #left{
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+    }
+    #top{
+        display: flex;
+        justify-content: space-between;
+   flex-basis: 50%;
+    }
+    #bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 50%;
+    }
+    .card-1{
+        flex-basis: 63% ;
+     }
+     .card-2{
+     flex-basis: 35%;
+     }
+     .card-3{
+     flex-basis: 35%;
+     
+     }
+     .card-4{
+         flex-basis: 63%;
+     }
+    .card-5{
+        height: 50rem;
+        flex-basis: 30%;
+        margin-left: 2rem;
+    }
+}
